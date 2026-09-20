@@ -1,0 +1,40 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Cloned repositories
+app/repositories/
+
+# Test and tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Logs and local runtime files
+*.log
+*.pid
+
+# ChromaDB persistent store (keep folder via chroma_db/.gitkeep)
+src/aicodingagentbackend/chroma_db/**
+!src/aicodingagentbackend/chroma_db/.gitkeep
+!src/aicodingagentbackend/chroma_db/.gitignore
+
+# IDE
+.idea/
+.vscode/
+*.swp

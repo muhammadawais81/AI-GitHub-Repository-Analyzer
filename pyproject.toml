@@ -1,0 +1,28 @@
+[project]
+name = "aicodingagentbackend"
+version = "0.1.0"
+description = "AI Coding Agent backend — analysis, RAG, and AI Software Engineer tools"
+readme = "README.md"
+authors = [
+    { name = "FISTA Solutions", email = "muhammadawais9189@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "GitPython>=3.1.43",
+    "pydantic>=2.9.0",
+    "python-dotenv>=1.0.1",
+    "openai-agents>=0.18.3",
+    "chromadb>=1.5.9",
+    "openai>=2.46.0",
+    "sentence-transformers>=3.0.0",
+    "torch>=2.0.0",
+]
+
+[project.scripts]
+aicodingagentbackend = "aicodingagentbackend.main:main"
+
+[build-system]
+requires = ["uv_build>=0.8.0,<0.9"]
+build-backend = "uv_build"
